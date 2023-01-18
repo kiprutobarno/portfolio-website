@@ -17,18 +17,15 @@ body {
   background-image: url(images/background.png);
   background-size: cover;
   background-position: center;
-  /* border: 0.0625rem solid blue; */
 }
 
 .container {
-  /* border: 0.0625rem solid red; */
   padding: 0.625rem 10%;
 }
 
 nav {
   display: flex;
   align-items: center;
-  border: 0.0625rem solid blue;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -40,7 +37,6 @@ nav {
 nav ul li {
   display: inline-flex;
   list-style: none;
-  /* border: 0.0625rem solid greenyellow; */
   margin: 0.625rem 1.25rem;
 }
 
@@ -64,4 +60,19 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
+}
+
+/* border: 0.0625rem solid greenyellow; */
+.header-text {
+  margin-top: 20%;
+  font-size: 1.875rem;
+}
+
+.header-text h1 {
+  font-size: 3.75rem;
+  margin-top: 1.875rem;
+}
+
+.header-text h1 span{
+  color: #ff004f;
 }
