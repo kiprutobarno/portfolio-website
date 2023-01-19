@@ -352,3 +352,12 @@ form .btn2 {
   margin-top: 1.25rem;
   cursor: pointer;
 }
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 1.5625rem;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 1.25rem;
+}
