@@ -150,6 +150,51 @@ nav ul li a:hover::after {
   display: none;
 }
 
-.tab-content.active-tab{
+.tab-content.active-tab {
   display: flex;
+}
+
+/* -------------Services------------ */
+.services {
+  padding: 1.875rem 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  grid-gap: 2.5rem;
+  margin-top: 3.125rem;
+}
+
+.services-list div {
+  background: #262626;
+  padding: 2.5rem;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  border-radius: 0.625rem;
+  transition: 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+  font-size: 3.125rem;
+  margin-bottom: 1.875rem;
+}
+
+.services-list div h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 0.9375rem;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-top: 1.25rem;
+  display: inline-block;
+}
+
+.services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-0.625rem);
 }
