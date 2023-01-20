@@ -6,6 +6,11 @@ var sideMenu = document.getElementById("sideMenu");
 var openIcon = document.getElementsByClassName("fa-bars");
 var closeIcon = document.getElementsByClassName("fa-xmark");
 
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbydIwxP4c_EpTf_KEVz2wVyXKPvhlPrvpdt43AlG6U7NylbNBT7ez0ucEqtg2AIAp-z/exec";
+const form = document.forms["submit-to-google-sheet"];
+const message = document.getElementById("msg");
+
 [...openIcon].forEach((icon) => {
   icon.addEventListener("click", openMenu);
 });
@@ -47,4 +52,16 @@ function closeMenu() {
   sideMenu.classList.remove("side-menu");
 }
 
-// bar.addEventListener("click", openMenu);
+/* Google Form Submit Script */
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      message.innerHTML = "Message sent successfully!";
+      setTimeout(function () {
+        message.innerHTML = "";
+      }, 2000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
