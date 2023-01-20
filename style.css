@@ -353,11 +353,103 @@ form .btn2 {
   cursor: pointer;
 }
 
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
-  padding: 1.5625rem;
+  padding: 1.5625rem 0;
   background: #262626;
   font-weight: 300;
   margin-top: 1.25rem;
+}
+
+/* ----------------Media Queries-------------- */
+
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0.3125rem 7.5%;
+  }
+  /* Header */
+  .header {
+    background-image: url(./images/phone-background.png);
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 1rem;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 1.5625rem;
+  }
+
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -12.5rem;
+    width: 12.5rem;
+    height: 100vh;
+    padding-top: 3.125rem;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  .side-menu {
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 1.5625rem;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 1.5625rem;
+    left: 1.5625rem;
+    cursor: pointer;
+  }
+
+  /* About */
+  .about{
+    padding: 3rem 0;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 1.875rem;
+  }
+
+  .about-col-2 {
+    font-size: 0.875rem;
+  }
+
+  .tab-link {
+    font-size: 1rem;
+    margin-right: 1.25rem;
+  }
+  /* Portfolio */
+  .portfolio {
+    padding: 2.5rem 0;
+  }
+
+  /* Contact Me */
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
 }
