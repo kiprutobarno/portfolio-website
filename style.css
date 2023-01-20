@@ -360,6 +360,7 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 1.25rem;
+
 }
 
 /* ----------------Media Queries-------------- */
@@ -418,7 +419,7 @@ nav .fa-solid {
   }
 
   /* About */
-  .about{
+  .about {
     padding: 3rem 0;
   }
   .subtitle {
@@ -451,5 +452,11 @@ nav .fa-solid {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+  }
+
+  .copyright {
+    position: fixed;
+    bottom: 1.25rem;
+    margin: 1.25rem 0;
   }
 }
