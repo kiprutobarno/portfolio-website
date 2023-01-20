@@ -360,7 +360,6 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 1.25rem;
-
 }
 
 /* ----------------Media Queries-------------- */
@@ -459,4 +458,9 @@ nav .fa-solid {
     bottom: 1.25rem;
     margin: 1.25rem 0;
   }
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -1.25rem;
 }
